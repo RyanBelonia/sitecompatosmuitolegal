@@ -1,0 +1,433 @@
+
+<!doctype html>
+<html lang="pt">
+
+<head>
+  <!-- 
+
+
+        R 
+        R R    Y        Y 
+        R  R    Y       Y   AA   N           N   
+        R   R    Y     Y   A A   NN          N     
+        R    R    Y   Y   A  A   N N         N         
+        R      R   Y Y   A   A   N  N        N         
+        R       R   Y   A    A   N   N       N         
+        R      R   Y   A     A   N    N      N         
+        R    R    Y   AAAAAAAA   N     N     N         
+        R  R     Y   A       A   N      N    N        
+        R R     Y   A        A   N       N   N             
+        R   R  Y   A         A   N        N  N         
+        R    R    A          A   N         N N       
+        R      R  A          A   N          NN           
+        R       R            A   N           N   
+        R        R              
+
+                       uuuuuuuuuuuuuuuuuuuuu.
+                   .u$$$$$$$$$$$$$$$$$$$$$$$$$$W.
+                 u$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Wu.
+               $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$i
+              $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+         `    $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+           .i$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$i
+           $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$W
+          .$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$W
+         .$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$i
+         #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$.
+         W$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$u       #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$~
+$#      `"$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$i        $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$        #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$         $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+#$.        $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$#
+ $$      $iW$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$!
+ $$i      $$$$$$$#"" `"""#$$$$$$$$$$$$$$$$$#""""""#$$$$$$$$$$$$$$$W
+ #$$W    `$$$#"            "       !$$$$$`           `"#$$$$$$$$$$#
+  $$$     ``                 ! !iuW$$$$$                 #$$$$$$$#
+  #$$    $u                  $   $$$$$$$                  $$$$$$$~
+   "#    #$$i.               #   $$$$$$$.                 `$$$$$$
+          $$$$$i.                """#$$$$i.               .$$$$#
+          $$$$$$$$!         .   `    $$$$$$$$$i           $$$$$
+          `$$$$$  $iWW   .uW`        #$$$$$$$$$W.       .$$$$$$#
+            "#$$$$$$$$$$$$#`          $$$$$$$$$$$iWiuuuW$$$$$$$$W
+               !#""    ""             `$$$$$$$##$$$$$$$$$$$$$$$$
+          i$$$$    .                   !$$$$$$ .$$$$$$$$$$$$$$$#
+         $$$$$$$$$$`                    $$$$$$$$$Wi$$$$$$#"#$$`
+         #$$$$$$$$$W.                   $$$$$$$$$$$#   ``
+          `$$$$##$$$$!       i$u.  $. .i$$$$$$$$$#""
+             "     `#W       $$$$$$$$$$$$$$$$$$$`      u$#
+                            W$$$$$$$$$$$$$$$$$$      $$$$W
+                            $$`!$$$##$$$$``$$$$      $$$$!
+                           i$" $$$$  $$#"`  """     W$$$$
+                                                   W$$$$!
+                      uW$$  uu  uu.  $$$  $$$Wu#   $$$$$$
+                     ~$$$$iu$$iu$$$uW$$! $$$$$$i .W$$$$$$
+             ..  !   "#$$$$$$$$$$##$$$$$$$$$$$$$$$$$$$$#"
+             $$W  $     "#$$$$$$$iW$$$$$$$$$$$$$$$$$$$$$W
+             $#`   `       ""#$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                              !$$$$$$$$$$$$$$$$$$$$$#`
+                              $$$$$$$$$$$$$$$$$$$$$$!
+                            $$$$$$$$$$$$$$$$$$$$$$$`
+                             $$$$$$$$$$$$$$$$$$$$"
+
+
+-->
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Home Page</title>
+
+
+  <!-- =====================================================
+       FONTE
+       ===================================================== -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- =====================================================
+       CSS
+       ===================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       FAÍSCAS
+       ===================================================== -->
+
+  <canvas id="sparks"></canvas>
+
+
+
+  <!-- =====================================================
+       CONTEÚDO PRINCIPAL
+       ===================================================== -->
+
+  <div class="content-wrapper">
+
+
+    <!-- ===================================================
+         TOPO
+         =================================================== -->
+
+    <div class="top-bar">
+
+
+      <!-- RELÓGIO -->
+
+      <div
+        class="clock"
+        id="relogio"
+      >
+        00:00
+      </div>
+
+
+
+      <!-- CONFIGURAÇÕES -->
+
+      <button
+        class="settings-button"
+        id="settings-button"
+        type="button"
+        aria-label="Configurações"
+        title="Configurações"
+      >
+        ⚙
+      </button>
+
+
+    </div>
+
+
+
+    <!-- ===================================================
+         ÁREA CENTRAL
+         =================================================== -->
+
+    <main class="main-content">
+
+
+      <!-- =================================================
+           ATALHOS
+           ================================================= -->
+
+      <div
+        class="shortcuts-container"
+        id="shortcuts-container"
+      >
+
+        <!--
+          Os atalhos serão criados
+          automaticamente pelo JavaScript.
+        -->
+
+      </div>
+
+
+
+      <!-- =================================================
+           BARRA DE PESQUISA
+           ================================================= -->
+
+      <div class="search-box">
+
+
+        <form
+          action="https://www.google.com/search"
+          method="GET"
+        >
+
+
+          <input
+            type="text"
+            name="q"
+            placeholder="Pesquisar..."
+            autofocus
+            autocomplete="off"
+          >
+
+
+        </form>
+
+
+      </div>
+
+
+    </main>
+
+
+  </div>
+
+
+
+  <!-- =====================================================
+       PAINEL DE CONFIGURAÇÕES
+       ===================================================== -->
+
+  <div
+    class="settings-overlay"
+    id="settings-overlay"
+  >
+
+
+    <div
+      class="settings-panel"
+      id="settings-panel"
+    >
+
+
+      <!-- =================================================
+           CABEÇALHO
+           ================================================= -->
+
+      <div class="settings-header">
+
+
+        <h2>
+          Configurações
+        </h2>
+
+
+
+        <button
+          id="close-settings"
+          class="close-settings"
+          type="button"
+          aria-label="Fechar configurações"
+        >
+          ×
+        </button>
+
+
+      </div>
+
+
+
+      <!-- =================================================
+           CONFIGURAÇÃO DOS PATOS
+           ================================================= -->
+
+      <div class="setting-item">
+
+
+        <div class="setting-information">
+
+
+          <span class="setting-title">
+            Patos
+          </span>
+
+
+          <span class="setting-description">
+            Quantidade de patos andando pela página.
+          </span>
+
+
+        </div>
+
+
+
+        <select id="duck-count">
+
+
+          <option value="0">
+            0
+          </option>
+
+
+          <option value="1">
+            1
+          </option>
+
+
+          <option value="2">
+            2
+          </option>
+
+
+          <option value="3">
+            3
+          </option>
+
+
+          <option value="4">
+            4
+          </option>
+
+
+          <option value="5">
+            5
+          </option>
+
+
+          <option value="6">
+            6
+          </option>
+
+
+          <option value="7">
+            7
+          </option>
+
+
+          <option value="8">
+            8
+          </option>
+
+
+          <option value="9">
+            9
+          </option>
+
+
+          <option value="10">
+            10
+          </option>
+
+
+        </select>
+
+
+      </div>
+
+
+
+      <!-- =================================================
+           GERENCIAR ATALHOS
+           ================================================= -->
+
+      <div class="settings-section">
+
+
+        <h3>
+          Atalhos
+        </h3>
+
+
+
+        <div
+          id="lista-atalhos-configuracao"
+        >
+
+          <!--
+            O JavaScript irá colocar aqui
+            todos os atalhos existentes.
+          -->
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+  <!-- =====================================================
+       SCRIPTS
+       ===================================================== -->
+
+
+  <!--
+    main.js
+    Relógio, configurações, faíscas,
+    abertura/fechamento do painel, etc.
+  -->
+
+  <script src="js/main.js"></script>
+
+
+  <!--
+    atalhos.js
+    Adicionar, carregar, guardar
+    e eliminar atalhos.
+  -->
+
+  <script src="js/atalhos.js"></script>
+
+
+  <!--
+    personagem.js
+    Sistema dos patos.
+  -->
+
+  <script src="js/personagem.js"></script>
+
+
+</body>
+
+</html>
+
